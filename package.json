@@ -1,0 +1,45 @@
+{
+	"name": "functions-nextjs",
+	"version": "3.0.0",
+	"description": "Next.js Static Site Generation and Server Side Rendering on Firebase Hosting with Cloud Functions",
+	"author": "James Hegedus",
+	"license": "MIT",
+	"main": "server.js",
+	"scripts": {
+		"clean": "rimraf nextjs/",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"predeploy": "yarn clean && next build",
+		"deploy": "firebase deploy"
+	},
+	"engines": {
+		"node": "12"
+	},
+	"dependencies": {
+		"@mdx-js/loader": "^1.6.22",
+		"@next/mdx": "^10.0.5",
+		"babel-plugin-styled-components": "^1.12.0",
+		"carbon-components": "^10.26.0",
+		"carbon-components-react": "^7.26.0",
+		"carbon-icons": "^7.0.7",
+		"dotenv": "^8.2.0",
+		"firebase": "^7.22.0",
+		"firebase-admin": "^8.13.0",
+		"firebase-functions": "^3.11.0",
+		"fs": "^0.0.1-security",
+		"next": "^10.0.5",
+		"next-auth": "^3.1.0",
+		"polished": "^4.0.5",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"styled-components": "^5.2.1",
+		"sqlite3": "^4.2.0",
+		"swr": "^0.2.3"
+	},
+	"devDependencies": {
+		"firebase-functions-test": "^0.2.2",
+		"rimraf": "^3.0.2",
+		"shelljs": "^0.8.4"
+	}
+}
