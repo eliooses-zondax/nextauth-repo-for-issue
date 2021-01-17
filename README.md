@@ -5,11 +5,11 @@ nextauth-repo-for-issue
 All login attempts on a Firebase server end at http://localhost:3000/api/auth/signin/<provider>
 
 **Steps to reproduce**
-Download the Next Auth Example: https://github.com/nextauthjs/next-auth-example
-Put the code into a Firebase ready to deploy project (good luck with that)
-Predeploy & Deploy to Firebase
-Visit page
-Try to login with any provider
+1. Download the Next Auth Example: https://github.com/nextauthjs/next-auth-example
+2. Put the code into a Firebase ready to deploy project (good luck with that)
+3. Predeploy & Deploy to Firebase
+4. Visit page
+5. Try to login with any provider
 
 **Expected behavior**
 Successful login
